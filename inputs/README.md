@@ -7,6 +7,7 @@ Raw, unedited source material we reference. Each source lives in its own subfold
 |---|---|---|
 | `book/` | *Agentic Design Patterns* by Gulli & Sauco — full text | Original repo (unchanged chapter content) |
 | `mcp-official/` | Model Context Protocol spec + docs + schema | Shallow clone of [modelcontextprotocol/modelcontextprotocol](https://github.com/modelcontextprotocol/modelcontextprotocol) |
+| `anthropic-mcp/` | Anthropic's MCP/tool-use docs (MCP Connector, Tool Runner, Tool Search, Claude Code MCP) | Fetched from `platform.claude.com` and `code.claude.com` |
 
 ## Adding a new source — convention
 1. Create `inputs/<slug>/` — put text docs, code, spec files here.

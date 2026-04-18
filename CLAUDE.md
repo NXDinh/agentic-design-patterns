@@ -15,6 +15,7 @@ When the task matches, open the packed note first; fall back to `inputs/...` for
 |---|---|---|
 | Designing a tool / function-calling interface | `knowledge/tool-use.md` | `inputs/book/01-Part_One/Chapter_5-*.md` |
 | Building or integrating an MCP server/client | `knowledge/mcp.md`, `knowledge/mcp-official-summary.md` | `inputs/mcp-official/docs/` + `inputs/mcp-official/schema/2025-11-25/` |
+| Using MCP from Claude API, SDK Tool Runner, tool search / defer_loading, or Claude Code's MCP client | `knowledge/anthropic-mcp-summary.md` | `inputs/anthropic-mcp/` |
 | RAG, vector search, or retrieval over docs | `knowledge/rag.md` | `inputs/book/03-Part_Three/Chapter_14-*.md` |
 | Any other agentic pattern (routing, memory, guardrails, eval, ...) | — | `inputs/book/0{1-4}-Part_*/Chapter_*.md` + `inputs/book/05-Appendix/` |
 

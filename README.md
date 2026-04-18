@@ -42,18 +42,20 @@ This book answers all that with patterns you can actually apply. The 70+ page ap
 This repo hosts the book plus additional source material and packed references for agentic-design work.
 
 ```
-inputs/                     # source documents (one subfolder per source)
-├── book/                   # the book: chapters, glossary, conclusion, FAQ
-└── mcp-official/           # Model Context Protocol spec + docs + schema
-assets/                     # photos/images (grouped by source)
+inputs/                        # source documents (one subfolder per source)
+├── book/                      # the book: chapters, glossary, conclusion, FAQ
+├── mcp-official/              # Model Context Protocol spec + docs + schema
+└── anthropic-mcp/             # Anthropic's MCP / tool-use / Claude Code docs
+assets/                        # photos/images (grouped by source)
 ├── book/
 └── mcp-official/
-knowledge/                  # packed / distilled references for Claude
-├── tool-use.md             # Ch 5 — Tool Use (Function Calling)
-├── mcp.md                  # Ch 10 — MCP
-├── rag.md                  # Ch 14 — RAG
-└── mcp-official-summary.md # Summary of the official MCP docs
-CLAUDE.md                   # Claude's index: which file to read when
+knowledge/                     # packed / distilled references for Claude
+├── tool-use.md                # Ch 5 — Tool Use (Function Calling)
+├── mcp.md                     # Ch 10 — MCP
+├── rag.md                     # Ch 14 — RAG
+├── mcp-official-summary.md    # Summary of the official MCP docs
+└── anthropic-mcp-summary.md   # Summary of Anthropic's MCP / tool-use content
+CLAUDE.md                      # Claude's index: which file to read when
 ```
 See `inputs/README.md` for the convention to add a new source.
 
