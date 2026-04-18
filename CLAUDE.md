@@ -1,12 +1,23 @@
 # Project Memory
 
-This repo contains the book *Agentic Design Patterns* (Gulli & Sauco).
+Knowledge base for agentic-design work: the *Agentic Design Patterns* book (Gulli & Sauco) plus the official MCP spec + docs.
 
-## Packed references (read on demand)
-Distilled, action-oriented notes live in `knowledge/`. Consult them when the current task matches:
+## Layout
+- `inputs/` — raw source documents, one subfolder per source (`book/`, `mcp-official/`, ...).
+- `assets/` — photos/images, grouped by source (`book/`, `mcp-official/`, ...).
+- `knowledge/` — packed/distilled references optimized for Claude.
+- See `inputs/README.md` for the convention to add new sources.
 
-- **Designing a tool / function-calling interface** → read `knowledge/tool-use.md`.
-- **Building or integrating an MCP server / client** → read `knowledge/mcp.md`.
-- **Designing retrieval, vector search, or RAG over documents** → read `knowledge/rag.md`.
+## Packed references — read on demand
+When the task matches, open the packed note first; fall back to `inputs/...` for the full source.
 
-The source chapters remain in `01-Part_One/`, `02-Part_Two/`, `03-Part_Three/` for deeper dives when the packed note is insufficient.
+| When the task is about... | Read first | Deep source |
+|---|---|---|
+| Designing a tool / function-calling interface | `knowledge/tool-use.md` | `inputs/book/01-Part_One/Chapter_5-*.md` |
+| Building or integrating an MCP server/client | `knowledge/mcp.md`, `knowledge/mcp-official-summary.md` | `inputs/mcp-official/docs/` + `inputs/mcp-official/schema/2025-11-25/` |
+| RAG, vector search, or retrieval over docs | `knowledge/rag.md` | `inputs/book/03-Part_Three/Chapter_14-*.md` |
+| Any other agentic pattern (routing, memory, guardrails, eval, ...) | — | `inputs/book/0{1-4}-Part_*/Chapter_*.md` + `inputs/book/05-Appendix/` |
+
+## Notes
+- Latest MCP spec revision in `inputs/mcp-official/`: **2025-11-25**. The `schema/2025-11-25/schema.ts` is authoritative.
+- Book image references use `../../../assets/book/...` after the reorg.
